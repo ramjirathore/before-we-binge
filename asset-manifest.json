@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/movies-series-app/static/css/main.bfd314cb.chunk.css",
+    "main.js": "/movies-series-app/static/js/main.d5126051.chunk.js",
+    "main.js.map": "/movies-series-app/static/js/main.d5126051.chunk.js.map",
+    "runtime-main.js": "/movies-series-app/static/js/runtime-main.09d11bc7.js",
+    "runtime-main.js.map": "/movies-series-app/static/js/runtime-main.09d11bc7.js.map",
+    "static/js/2.922809fa.chunk.js": "/movies-series-app/static/js/2.922809fa.chunk.js",
+    "static/js/2.922809fa.chunk.js.map": "/movies-series-app/static/js/2.922809fa.chunk.js.map",
+    "index.html": "/movies-series-app/index.html",
+    "precache-manifest.46c987478febed37a4df6e93ecb90a30.js": "/movies-series-app/precache-manifest.46c987478febed37a4df6e93ecb90a30.js",
+    "service-worker.js": "/movies-series-app/service-worker.js",
+    "static/css/main.bfd314cb.chunk.css.map": "/movies-series-app/static/css/main.bfd314cb.chunk.css.map",
+    "static/js/2.922809fa.chunk.js.LICENSE.txt": "/movies-series-app/static/js/2.922809fa.chunk.js.LICENSE.txt",
+    "static/media/Ripple.gif": "/movies-series-app/static/media/Ripple.8b31cde9.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09d11bc7.js",
+    "static/js/2.922809fa.chunk.js",
+    "static/css/main.bfd314cb.chunk.css",
+    "static/js/main.d5126051.chunk.js"
+  ]
+}
