@@ -1,9 +1,10 @@
 export {
-    searchMovie,
-    clearInput
+	searchMovie,
+	clearInput
 } from './search';
 export {
-    fetchMovies,
-    fetchFilm,
-    loading
+	fetchMovies,
+	fetchFilm,
+	loading,
+	fetchTrailers
 } from './fetch';

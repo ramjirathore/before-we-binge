@@ -9,16 +9,16 @@ import Movie from "./containers/Movies/Movie/Movie";
 import "./App.css";
 
 const App = () => {
-  return (
-    <div className="App">
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Canvas} />
-        <Route path="/movie/:id" component={Movie} />
-      </Switch>
-      <Footer />
-    </div>
-  );
+	return (
+		<div className="App">
+			<Header />
+			<Switch>
+				<Route exact path="/" component={ Canvas } />
+				<Route path="/movie/:id" component={ Movie } />
+			</Switch>
+			<Footer />
+		</div>
+	);
 };
 
 export default App;
