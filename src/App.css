@@ -70,7 +70,7 @@
 }
 
 .news_container {
-	min-height: 20rem;
+	margin-bottom: 3rem;
 }
 
 .news_container_cards {
@@ -79,12 +79,24 @@
 
 .newscard {
 	margin: 0 1rem;
-	height: 10rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	max-width: 20rem;
+	min-width: 15rem;
 	padding: 1rem;
 	border: .1rem solid #cecece;
 	border-radius: .5rem;
+}
+
+.newscard_img {
+	padding: 1rem 0;
+	height: 10rem;
+}
+
+.newscard_desc {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 200px;
+	height: 2rem;
 }

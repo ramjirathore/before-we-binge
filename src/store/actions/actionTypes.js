@@ -1,6 +1,9 @@
-export const SEARCH_MOVIE = 'SEARCH MOVIE';
-export const FETCH_MOVIES = 'FETCH MOVIES';
-export const FETCH_FILM = 'FETCH FILM';
+export const SEARCH_MOVIE = 'SEARCH_MOVIE';
+export const FETCH_MOVIES = 'FETCH_MOVIES';
+export const FETCH_FILM = 'FETCH_FILM';
+export const FETCH_NEWS_START = 'FETCH_NEWS_START';
+export const FETCH_NEWS_SUCCESS = 'FETCH_NEWS_SUCCESS';
+export const FETCH_TRAILERS = 'FETCH_TRAILERS';
 export const LOADING = 'LOADING';
 export const CLEAR_INPUT = 'CLEAR_INPUT';
-export const FETCH_TRAILERS = 'FETCH_TRAILER';
+export const TOGGLE_NEWS = 'TOGGLE_NEWS';

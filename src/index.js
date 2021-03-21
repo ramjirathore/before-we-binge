@@ -7,13 +7,15 @@ import { HashRouter as Router } from 'react-router-dom';
 
 import searchMovies from './store/reducers/search';
 import fetchMovies from './store/reducers/fetch';
+import seeNews from './store/reducers/news';
 import App from './App';
 
 import './index.css';
 
 const rootReducer = combineReducers({
-  srch: searchMovies,
-  fetch: fetchMovies
+	srch: searchMovies,
+	fetch: fetchMovies,
+	news: seeNews
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -34,13 +36,13 @@ const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)))
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <Router>
-        <App />
-      </Router>
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<Provider store={ store }>
+			<Router>
+				<App />
+			</Router>
+		</Provider>
+	</React.StrictMode>,
+	document.getElementById('root')
 );
 

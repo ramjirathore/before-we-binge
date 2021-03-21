@@ -1,13 +1,15 @@
 import React from 'react';
 
-const NewsCard = () => {
+const NewsCard = (props) => {
 	return (
 		<div className='newscard bg-dark border-secondary'>
-			<h3>Headline</h3>
-			<img src='sf' alt='headline-img' />
-			<p>lorem ispuml helll0 hksh ljslfja khksadfj ljjslajdf</p>
+			<h6 style={ { textAlign: 'left' } }>{ props.title }</h6>
+			<img src={ props.urlToImage } className="img-fluid rounded newscard_img" alt='headline-img' />
+			<p className="newscard_desc">{ props.description }</p>
+			<button className='btn btn-warning' onClick={ () => window.open(props.url) }>View</button>
 		</div>
 	);
 };
+
 
 export default NewsCard;

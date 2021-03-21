@@ -35,7 +35,7 @@ export const fetchTrailers = (id) => {
 	return dispatch => {
 		axios.get(`https://api.themoviedb.org/3/movie/550?api_key=${APIkey.tmdb_key}`)
 			.then(response => {
-				console.log(response.data);
+				// console.log(response.data);
 				dispatch({
 					type: actionTypes.FETCH_TRAILERS,
 					payload: response.data
@@ -44,3 +44,5 @@ export const fetchTrailers = (id) => {
 			.catch(err => console.log(err));
 	};
 };
+
+

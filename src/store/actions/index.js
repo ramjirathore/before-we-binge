@@ -8,3 +8,7 @@ export {
 	loading,
 	fetchTrailers
 } from './fetch';
+export {
+	toggleNews,
+	fetchNews
+} from './news';
