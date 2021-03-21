@@ -31,18 +31,21 @@ export const fetchFilm = (id) => {
 	};
 };
 
-export const fetchTrailers = (id) => {
+export const fetchTrailerId = (movieName) => {
 	return dispatch => {
-		axios.get(`https://api.themoviedb.org/3/movie/550?api_key=${APIkey.tmdb_key}`)
+		axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${APIkey.tmdb_key}&query=${movieName}`)
 			.then(response => {
-				// console.log(response.data);
-				dispatch({
-					type: actionTypes.FETCH_TRAILERS,
-					payload: response.data
-				});
+				const id = response.data.results[0].id;
+				axios.get(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${APIkey.tmdb_key}&language=en-US`)
+					.then(response => {
+						dispatch({
+							type: actionTypes.FETCH_VIDEO_KEY,
+							payload: response.data.results[0].key
+						});
+					})
+					.catch(err => console.log(err));
 			})
 			.catch(err => console.log(err));
 	};
 };
-
 

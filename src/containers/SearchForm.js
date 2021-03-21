@@ -17,7 +17,6 @@ class SearchForm extends Component {
 	};
 
 	componentDidMount() {
-		this.props.fetchTrailers();
 		this.props.fetchNews();
 	}
 
@@ -74,7 +73,6 @@ const mapDispatchToProps = dispatch => ({
 	onFetchedMovies: (searchedText) => dispatch(actionCreators.fetchMovies(searchedText)),
 	onLoaded: () => dispatch(actionCreators.loading()),
 	OnInputCleared: () => dispatch(actionCreators.clearInput()),
-	fetchTrailers: () => dispatch(actionCreators.fetchTrailers()),
 	fetchNews: () => dispatch(actionCreators.fetchNews())
 });
 

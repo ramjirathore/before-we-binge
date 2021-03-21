@@ -6,7 +6,7 @@ export {
 	fetchMovies,
 	fetchFilm,
 	loading,
-	fetchTrailers
+	fetchTrailerId,
 } from './fetch';
 export {
 	toggleNews,
