@@ -100,3 +100,7 @@
 	max-width: 200px;
 	height: 2rem;
 }
+
+.my-modal .modal-content {
+  background-color:#1d1f24;
+}

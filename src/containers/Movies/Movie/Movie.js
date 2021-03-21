@@ -103,18 +103,22 @@ class Movie extends Component {
 							</div>
 						</div>
 					</div>
-					<Modal show={ this.state.showModal } size="xl" centered onHide={ () => this.setState({ showModal: false }) } >
-						<Modal.Header closeButton>
+					<Modal show={ this.state.showModal } className="my-modal" size="xl" centered onHide={ () => this.setState({ showModal: false }) } >
+						<Modal.Header closeButton />
+						<Modal.Footer>
 							<iframe src={ `https://www.youtube.com/embed/${this.props.trailerKey}` }
 								frameborder='0'
 								allow='autoplay; encrypted-media'
-								allowfullscreen
+								allowfullscreen="allowfullscreen"
+								mozallowfullscreen="mozallowfullscreen"
+								msallowfullscreen="msallowfullscreen"
+								oallowfullscreen="oallowfullscreen"
+								webkitallowfullscreen="webkitallowfullscreen"
 								title='video'
 								style={ { width: '90vw', height: '60vh' } }
 							/>
-						</Modal.Header>
+						</Modal.Footer>
 					</Modal>
-					<div className="col-sm-1"></div>
 				</div >
 			</div >
 		);
