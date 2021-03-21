@@ -104,7 +104,11 @@ class Movie extends Component {
 						</div>
 					</div>
 					<Modal show={ this.state.showModal } className="my-modal" size="xl" centered onHide={ () => this.setState({ showModal: false }) } >
-						<Modal.Header closeButton />
+						<Modal.Header closeButton >
+							<h5 className="text-light text-center mb-2">
+								Trailer: { this.props.movie.Title }
+							</h5>
+						</Modal.Header>
 						<Modal.Footer>
 							<iframe src={ `https://www.youtube.com/embed/${this.props.trailerKey}` }
 								frameborder='0'
